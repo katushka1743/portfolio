@@ -19,7 +19,7 @@
   margin: 0;
   padding: 0;
   font-size: 18px;
-  font-family: "CenturyGothic", "CenturyGothic2", Arial, Helvetica, sans-serif;
+  font-family: "CenturyGothic", "CenturyGothic2";
   text-wrap: wrap;
   hyphens: auto;
   hyphenate-limit-chars: 10 4 3;
@@ -56,6 +56,12 @@ body {
 }
 
 a {
+  text-decoration: none;
+  color: var(--colorBlack);
+  cursor: url(../img/star_20.png) 8 8, pointer;
+}
+
+RouterLink {
   text-decoration: none;
   color: var(--colorBlack);
   cursor: url(../img/star_20.png) 8 8, pointer;
