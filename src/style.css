@@ -96,6 +96,8 @@ button {
   border: none;
   cursor: url(../img/star_20.png) 8 8, pointer;
   margin-top: 2rem;
+  color: var(--colorBlack);
+
 }
 
 .buttonPink {
