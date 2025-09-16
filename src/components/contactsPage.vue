@@ -15,7 +15,7 @@ import formVue from './form.vue';
       <div class="socials">
         <div class="social">
           <img src="../../img/vk_733639.png" class="iconSkills" alt="iconImg">
-          <a class="aPink" href="https://vk.com/katushka1743vk" target="_blank">https://vk.com/katushka1743vk</a>
+          <a class="aPink" href="https://vk.com/katushka1743group" target="_blank">https://vk.com/katushka1743group</a>
         </div>
         <div class="social">
           <img src="../../img/github_1051377.png" class="iconSkills" alt="iconImg">

@@ -32,7 +32,7 @@ function upBtn() {
         © 2025 katushka1743
       </div>
       <div class="social">
-        <a target="_blank" translate="no" href="https://vk.com/katushka1743vk">Vkontakte &#8599;</a>
+        <a target="_blank" translate="no" href="https://vk.com/katushka1743group">Vkontakte &#8599;</a>
         <a target="_blank" translate="no" href="https://github.com/katushka1743">GitHub &#8599;</a>
         <a target="_blank" translate="no" href="https://www.behance.net/katushka1743">Behance &#8599;</a>
       </div>
