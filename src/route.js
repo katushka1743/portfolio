@@ -7,11 +7,11 @@ import skillsPage from "./components/skillsPage.vue";
 import contactsPage from "./components/contactsPage.vue";
 
 const routes = [
-  { path: "/", component: mainPage, name: "mainPage" },
-  { path: "/aboutPage", component: aboutPage, name: "aboutPage" },
-  { path: "/casePage", component: casePage, name: "casePage" },
-  { path: "/skillsPage", component: skillsPage, name: "skillsPage" },
-  { path: "/contactsPage", component: contactsPage, name: "contactsPage" },
+  { path: "/portfolio/", component: mainPage, name: "mainPage" },
+  { path: "/portfolio/aboutPage", component: aboutPage, name: "aboutPage" },
+  { path: "/portfolio/casePage", component: casePage, name: "casePage" },
+  { path: "/portfolio/skillsPage", component: skillsPage, name: "skillsPage" },
+  { path: "/portfolio/contactsPage", component: contactsPage, name: "contactsPage" },
 ];
 
 export const router = createRouter({
