@@ -126,7 +126,6 @@ p {
 .titleImg {
   display: flex;
   flex-direction: row;
-  /* justify-content: center; */
   align-items: center;
   gap: 1rem;
 }
@@ -139,7 +138,6 @@ p {
   background: var(--colorGradientTP);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* background: var(--colorGradientTP); */
 
 }
 
@@ -155,7 +153,6 @@ p {
 .buttonsStart {
   display: flex;
   flex-direction: row;
-  /* flex-wrap: wrap; */
   gap: 5rem;
   justify-content: center;
 }

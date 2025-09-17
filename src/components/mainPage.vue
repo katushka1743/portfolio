@@ -196,6 +196,45 @@ figure {
   width: 23rem;
 }
 
+@media screen and (width <=1200px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .photo {
+    height: 22rem;
+  }
+
+  .heroText {
+    font-size: 1.8rem;
+  }
+
+  .accent {
+    font-size: 1.8rem;
+  }
+
+  .TextAndBtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .buttonsStart {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .skillsImges {
+    gap: 2rem;
+    justify-content: center;
+  }
+}
+
 @media screen and (width <=576px) {
   .contentPage {
     padding-inline: 0.5rem;
@@ -239,50 +278,4 @@ figure {
     justify-content: center;
   }
 }
-
-@media screen and (width <=1200px) {
-  .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3rem;
-  }
-
-  .photo {
-    height: 22rem;
-  }
-
-  .heroText {
-    font-size: 1.8rem;
-  }
-
-  .accent {
-    font-size: 1.8rem;
-  }
-
-  .TextAndBtn {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    gap: 2rem;
-  }
-
-  .buttonsStart {
-    display: flex;
-    gap: 2rem;
-  }
-
-  .skillsImges {
-    gap: 2rem;
-    justify-content: center;
-  }
-}
-
-/* @media screen and (width >=1600px) {
-  .contentPage {
-    padding-block: 1.2rem;
-    margin-inline: 10rem;
-  }
-} */
 </style>

@@ -26,7 +26,6 @@
   hyphenate-limit-chars: 10 4 3;
 }
 
-
 @font-face {
   font-family: "RalewayThin";
   src: local("RalewayThin"), url(../fonts/Raleway/static/Raleway-Thin.ttf);
@@ -120,7 +119,6 @@ h2 {
   text-align: center;
   font-size: "Raleway";
   font-weight: bold;
-
 }
 
 .Pink {
@@ -181,6 +179,22 @@ img {
   margin-inline: 3rem;
 }
 
+@media screen and (width <= 1200px) {
+  * {
+    font-size: 0.95rem;
+    flex-wrap: wrap;
+  }
+
+  input {
+    width: 30rem;
+  }
+
+  textarea {
+    min-width: 30rem;
+    max-width: 30rem;
+  }
+}
+
 @media screen and (width <= 576px) {
   * {
     font-size: 0.9rem;
@@ -198,22 +212,6 @@ img {
   textarea {
     min-width: 28rem;
     max-width: 28rem;
-  }
-}
-
-@media screen and (width <= 1200px) {
-  * {
-    font-size: 0.95rem;
-    flex-wrap: wrap;
-  }
-
-  input {
-    width: 30rem;
-  }
-
-  textarea {
-    min-width: 30rem;
-    max-width: 30rem;
   }
 }
 

@@ -73,11 +73,4 @@ import formVue from './form.vue';
   width: 5.5rem;
 }
 
-/* @media screen and (width <= 576px) {
-
-  .socials {
-    gap: 1rem;
-  }
-
-} */
 </style>

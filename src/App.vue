@@ -116,21 +116,6 @@ nav {
   text-align: center;
 }
 
-
-
-
-
-@media screen and (width <=576px) {
-  .footer {
-    flex-direction: column;
-  }
-
-  .menu {
-    flex-direction: row;
-    gap: 1rem;
-  }
-}
-
 @media screen and (width <=1200px) {
   .footer {
     flex-direction: column;
@@ -139,6 +124,19 @@ nav {
   .menu {
     flex-direction: row;
     gap: 2rem;
+  }
+}
+
+
+
+@media screen and (width <=576px) {
+  .footer {
+    flex-direction: column-reverse;
+  }
+
+  .menu {
+    flex-direction: row;
+    gap: 1rem;
   }
 }
 </style>
