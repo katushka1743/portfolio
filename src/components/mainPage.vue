@@ -91,8 +91,9 @@ import formVue from './form.vue';
   padding-top: 3rem;
   display: flex;
   flex-direction: row;
-  align-items: start;
+  align-items: center;
   gap: 3rem;
+  justify-content: center;
 }
 
 .photo {
@@ -119,7 +120,6 @@ span {
 
 .dash {
   white-space: nowrap;
-
 }
 
 .TextAndBtn {
@@ -196,7 +196,7 @@ figure {
   width: 23rem;
 }
 
-@media screen and (width <=1200px) {
+@media screen and (576 <=width <=1200px) {
   .hero {
     display: flex;
     flex-direction: column;

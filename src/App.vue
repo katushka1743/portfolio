@@ -1,5 +1,7 @@
 <script setup>
+import { RouterLink, RouterView, useRoute } from 'vue-router';
 
+const route = useRoute()
 
 function upBtn() {
   window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -14,11 +16,11 @@ function upBtn() {
   <div class="content">
     <header class="header">
       <nav>
-        <RouterLink class="navRouter" :to="{ name: 'mainPage' }">Главная</RouterLink>
-        <RouterLink class="navRouter" :to="{ name: 'aboutPage' }">Обо мне</RouterLink>
-        <RouterLink class="navRouter" :to="{ name: 'skillsPage' }">Навыки</RouterLink>
-        <RouterLink class="navRouter" :to="{ name: 'casePage' }">Работы</RouterLink>
-        <RouterLink class="navRouter" :to="{ name: 'contactsPage' }">Контакты</RouterLink>
+        <RouterLink class="navRouter" :class="{'activePage': route.path === '/portfolio/'}" :to="{ name: 'mainPage' }">Главная</RouterLink>
+        <RouterLink class="navRouter" :class="{'activePage': route.path === '/portfolio/aboutPage'}" :to="{ name: 'aboutPage' }">Обо мне</RouterLink>
+        <RouterLink class="navRouter" :class="{'activePage': route.path === '/portfolio/skillsPage'}" :to="{ name: 'skillsPage' }">Навыки</RouterLink>
+        <RouterLink class="navRouter" :class="{'activePage': route.path === '/portfolio/casePage'}" :to="{ name: 'casePage' }">Работы</RouterLink>
+        <RouterLink class="navRouter" :class="{'activePage': route.path === '/portfolio/contactsPage'}" :to="{ name: 'contactsPage' }">Контакты</RouterLink>
       </nav>
     </header>
     <main class="main">
@@ -37,15 +39,14 @@ function upBtn() {
         <a target="_blank" translate="no" href="https://www.behance.net/katushka1743">Behance &#8599;</a>
       </div>
       <div class="menu footerElem ">
-        <RouterLink class="navRouter" :to="{ name: 'mainPage' }">Главная</RouterLink>
-        <RouterLink class="navRouter" :to="{ name: 'aboutPage' }">Обо мне</RouterLink>
-        <RouterLink class="navRouter" :to="{ name: 'skillsPage' }">Навыки</RouterLink>
-        <RouterLink class="navRouter" :to="{ name: 'casePage' }">Работы</RouterLink>
-        <RouterLink class="navRouter" :to="{ name: 'contactsPage' }">Контакты</RouterLink>
+        <RouterLink class="navRouter"  :to="{ name: 'mainPage' }">Главная</RouterLink>
+        <RouterLink class="navRouter"  :to="{ name: 'aboutPage' }">Обо мне</RouterLink>
+        <RouterLink class="navRouter"  :to="{ name: 'skillsPage' }">Навыки</RouterLink>
+        <RouterLink class="navRouter"  :to="{ name: 'casePage' }">Работы</RouterLink>
+        <RouterLink class="navRouter"  :to="{ name: 'contactsPage' }">Контакты</RouterLink>
       </div>
     </footer>
   </div>
-
 
 </template>
 
@@ -74,6 +75,10 @@ nav {
 
 .navRouter {
   color: var(--colorBlack);
+}
+
+.activePage {
+  font-weight: bold;
 }
 
 
