@@ -19,7 +19,7 @@
   margin: 0;
   padding: 0;
   font-size: 18px;
-  font-family: "CenturyGothic", "CenturyGothic2";
+  font-family: "CenturyGothic";
   text-wrap: wrap;
   hyphens: auto;
   hyphenate-limit-chars: 10 4 3;
@@ -36,23 +36,13 @@
     url(../fonts/CenturyGothicPaneuropean/CenturyGothicPaneuropeanThin.ttf);
 }
 
-@font-face {
-  font-family: "CenturyGothic2";
-  src: local("CenturyGothic2"),
-    url(../fonts/century-gothic/Century\ Gothic.otf);
-}
-
 html {
   scrollbar-width: thin;
   scrollbar-color: var(--colorTurquoise) var(--colorPink);
-  
 }
 
 body {
   font-family: "CenturyGothic";
-  /* width: 100dvw; */
-  /* min-height: 100dvh; */
-
 }
 
 a {
@@ -97,7 +87,6 @@ button {
   cursor: url(../img/star_20.png) 8 8, pointer;
   margin-top: 2rem;
   color: var(--colorBlack);
-
 }
 
 .buttonPink {
@@ -178,7 +167,6 @@ img {
 }
 
 .contentPage {
-
   padding-block: 1.2rem;
   margin-inline: 3rem;
 }
@@ -203,13 +191,11 @@ img {
   }
 }
 
-
 @media screen and (width <= 1200px) {
   * {
     font-size: 0.95rem;
     flex-wrap: wrap;
   }
-
 
   input {
     width: 30rem;

@@ -65,15 +65,13 @@ import formVue from './form.vue';
       </figure>
       <figure class="item8">
         <img class="imgCases" src="../../img/Снимок экрана 2025-09-05 210636.png" alt="exampleCase">
-        <figcaption><a
-            href="https://katushka1743.github.io/The-Sims-4/"
-            class="aTurquoise" target="_blank">Многостраничный сайт по игре The Sims 4. Учебная работа</a></figcaption>
+        <figcaption><a href="https://katushka1743.github.io/The-Sims-4/" class="aTurquoise"
+            target="_blank">Многостраничный сайт по игре The Sims 4. Учебная работа</a></figcaption>
       </figure>
       <figure class="item9">
         <img class="imgCases" src="../../img/Снимок экрана 2025-09-05 224135.png" alt="exampleCase">
-        <figcaption><a
-            href="https://katushka1743.github.io/FromBoard-Delivery/"
-            class="aTurquoise" target="_blank">Лендинг сайта по доставкам. Учебная работа на экран 1920 пикселей</a></figcaption>
+        <figcaption><a href="https://katushka1743.github.io/FromBoard-Delivery/" class="aTurquoise"
+            target="_blank">Лендинг сайта по доставкам. Учебная работа на экран 1920 пикселей</a></figcaption>
       </figure>
     </div>
 
@@ -86,7 +84,6 @@ import formVue from './form.vue';
 
 
 <style scoped>
-
 .titleImg {
   display: flex;
   flex-direction: row;
@@ -133,6 +130,4 @@ figure {
 .imgCases {
   width: 23rem;
 }
-
-
 </style>

@@ -160,7 +160,7 @@ p {
   justify-content: center;
 }
 
-@media screen and (width <= 576px) {
+@media screen and (width <=576px) {
 
   .contentPage {
     padding-inline: 1rem;
@@ -182,9 +182,9 @@ p {
     width: 25rem;
   }
 
-.buttonsStart {
-  gap: 1rem;
-}
+  .buttonsStart {
+    gap: 1rem;
+  }
 
 }
 </style>

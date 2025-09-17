@@ -118,7 +118,7 @@ span {
 }
 
 .dash {
-    white-space: nowrap;
+  white-space: nowrap;
 
 }
 

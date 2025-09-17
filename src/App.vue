@@ -112,7 +112,7 @@ nav {
 
 
 
-@media screen and (width <= 576px) {
+@media screen and (width <=576px) {
   .footer {
     flex-direction: column;
   }
@@ -123,7 +123,7 @@ nav {
   }
 }
 
-@media screen and (width <= 1200px) {
+@media screen and (width <=1200px) {
   .footer {
     flex-direction: column;
   }

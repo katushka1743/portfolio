@@ -81,8 +81,8 @@
 
 
     </div>
-    
-      <RouterLink :to="{ name: 'casePage' }"><button class="buttonTurquoise">Посмотреть работы</button></RouterLink>
+
+    <RouterLink :to="{ name: 'casePage' }"><button class="buttonTurquoise">Посмотреть работы</button></RouterLink>
 
   </div>
 </template>
@@ -90,7 +90,6 @@
 
 
 <style scoped>
-
 .contentPage {
   display: flex;
   flex-direction: column;
@@ -135,7 +134,7 @@
   font-size: 0.9rem;
 }
 
-@media screen and (width <= 576px) {
+@media screen and (width <=576px) {
 
   .contentPage {
     padding-inline: 1rem;
@@ -155,6 +154,4 @@
 
 
 }
-
-
 </style>
