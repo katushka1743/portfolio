@@ -78,7 +78,8 @@ nav {
 }
 
 .activePage {
-  font-weight: bold;
+  font-family: "Raleway";
+  font-weight: 900;
 }
 
 
