@@ -210,6 +210,8 @@ figure {
 
   .heroText {
     font-size: 1.8rem;
+    hyphens: none;
+
   }
 
   .accent {

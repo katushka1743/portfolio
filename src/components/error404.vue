@@ -15,5 +15,7 @@
   flex-direction: column;
   align-items: center;
   gap: 5rem;
+  hyphens: none;
+
 }
 </style>
