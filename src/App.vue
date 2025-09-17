@@ -27,16 +27,16 @@ function upBtn() {
         <img src="../img/Group 12.png" alt="up">
       </button>
     </main>
-    <footer class="footer">
-      <div class="copyright" translate="no">
+    <footer class="footer ">
+      <div class="copyright footerElem" translate="no">
         © 2025 katushka1743
       </div>
-      <div class="social">
+      <div class="social footerElem ">
         <a target="_blank" translate="no" href="https://vk.com/katushka1743group">Vkontakte &#8599;</a>
         <a target="_blank" translate="no" href="https://github.com/katushka1743">GitHub &#8599;</a>
         <a target="_blank" translate="no" href="https://www.behance.net/katushka1743">Behance &#8599;</a>
       </div>
-      <div class="menu">
+      <div class="menu footerElem ">
         <RouterLink class="navRouter" :to="{ name: 'mainPage' }">Главная</RouterLink>
         <RouterLink class="navRouter" :to="{ name: 'aboutPage' }">Обо мне</RouterLink>
         <RouterLink class="navRouter" :to="{ name: 'skillsPage' }">Навыки</RouterLink>
@@ -92,6 +92,14 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
+}
+
+.footerElem {
+  width: 20rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
 

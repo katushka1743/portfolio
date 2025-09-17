@@ -19,21 +19,27 @@
   margin: 0;
   padding: 0;
   font-size: 18px;
-  font-family: "CenturyGothic";
+  font-family: "RalewayLight";
+  /* font-weight: 100; */
   text-wrap: wrap;
   hyphens: auto;
   hyphenate-limit-chars: 10 4 3;
 }
 
+
 @font-face {
-  font-family: "CenturyGothic";
-  src: local("CenturyGothic"), url(/portfolio/fonts/CenturyGothicPaneuropean/);
+  font-family: "RalewayThin";
+  src: local("RalewayThin"), url(../fonts/Raleway/static/Raleway-Thin.ttf);
 }
 
 @font-face {
-  font-family: "CenturyGothicThin";
-  src: local("CenturyGothicThin"),
-    url(../fonts/CenturyGothicPaneuropean/CenturyGothicPaneuropeanThin.ttf);
+  font-family: "Raleway";
+  src: local("Raleway"), url(../fonts/Raleway/static/Raleway-Regular.ttf);
+}
+
+@font-face {
+  font-family: "RalewayLight";
+  src: local("RalewayLight"), url(../fonts/Raleway/static/Raleway-Light.ttf);
 }
 
 html {
@@ -42,7 +48,8 @@ html {
 }
 
 body {
-  font-family: "CenturyGothic";
+  font-family: "RalewayLight";
+  /* font-weight: 100; */
 }
 
 a {
@@ -111,6 +118,9 @@ h2 {
   font-size: 2rem;
   padding-block: 2rem;
   text-align: center;
+  font-size: "Raleway";
+  font-weight: bold;
+
 }
 
 .Pink {
