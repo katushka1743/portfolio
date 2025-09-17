@@ -211,7 +211,6 @@ figure {
   .heroText {
     font-size: 1.8rem;
     hyphens: none;
-
   }
 
   .accent {
@@ -256,6 +255,12 @@ figure {
 
   .heroText {
     font-size: 1.6rem;
+    hyphens: none;
+  }
+
+  .textAbout {
+    hyphens: none;
+
   }
 
   .accent {
