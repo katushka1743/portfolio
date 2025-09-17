@@ -265,6 +265,8 @@ figure {
 
   .accent {
     font-size: 1.6rem;
+    hyphens: none;
+
   }
 
   .TextAndBtn {
