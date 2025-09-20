@@ -1,0 +1,247 @@
+:root {
+  --colorPink: #d981b5;
+  --colorTurquoise: #8feace;
+  --colorBlack: #000000;
+  --colorWhite: #ffffff;
+  --colorGradientPT: linear-gradient(
+    45deg,
+    var(--colorPink),
+    var(--colorTurquoise)
+  );
+  --colorGradientTP: linear-gradient(
+    45deg,
+    var(--colorTurquoise),
+    var(--colorPink)
+  );
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: "RalewayLight";
+  /* font-weight: 100; */
+  text-wrap: wrap;
+  hyphens: auto;
+  hyphenate-limit-chars: 10 4 3;
+}
+
+@font-face {
+  font-family: "RalewayThin";
+  src: local("RalewayThin"), url(../fonts/Raleway/static/Raleway-Thin.ttf);
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway"), url(../fonts/Raleway/static/Raleway-Regular.ttf);
+}
+
+@font-face {
+  font-family: "RalewayLight";
+  src: local("RalewayLight"), url(../fonts/Raleway/static/Raleway-Light.ttf);
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--colorTurquoise) var(--colorPink);
+}
+
+body {
+  font-family: "RalewayLight";
+  /* font-weight: 100; */
+}
+
+a {
+  text-decoration: none;
+  color: var(--colorBlack);
+  cursor: url(../img/star_20.png) 8 8, pointer;
+}
+
+RouterLink {
+  text-decoration: none;
+  color: var(--colorBlack);
+  cursor: url(../img/star_20.png) 8 8, pointer;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--colorBlack);
+}
+
+.aPink {
+  color: var(--colorBlack);
+}
+
+.aPink:hover {
+  color: var(--colorPink);
+}
+
+.aTurquoise {
+  color: var(--colorBlack);
+}
+
+.aTurquoise:hover {
+  color: var(--colorTurquoise);
+}
+
+button {
+  font-size: 1.1rem;
+  width: 15rem;
+  height: 4rem;
+  border-radius: 1rem;
+  border: none;
+  cursor: url(../img/star_20.png) 8 8, pointer;
+  margin-top: 2rem;
+  color: var(--colorBlack);
+}
+
+.buttonPink {
+  background-color: var(--colorPink);
+}
+
+.buttonPink:hover {
+  background-color: var(--colorTurquoise);
+  transform: scale(1.05);
+}
+
+.buttonTurquoise {
+  background-color: var(--colorTurquoise);
+}
+
+.buttonTurquoise:hover {
+  background-color: var(--colorPink);
+  transform: scale(1.05);
+}
+
+h2 {
+  font-size: 2rem;
+  padding-block: 2rem;
+  text-align: center;
+  font-size: "Raleway";
+  font-weight: bold;
+}
+
+.Pink {
+  color: var(--colorPink);
+}
+
+.Turquoise {
+  color: var(--colorTurquoise);
+}
+
+input {
+  border: 0.1rem solid;
+  border-image: var(--colorGradientTP) 1;
+  width: 32rem;
+  height: 2.2rem;
+  padding-left: 1rem;
+  color: var(--colorPink);
+  outline: none;
+  caret-color: var(--colorPink);
+}
+
+::-webkit-input-placeholder {
+  color: var(--colorPink);
+  text-align: start;
+  opacity: 50%;
+}
+
+textarea {
+  border: 0.1rem solid;
+  border-image: var(--colorGradientTP) 1;
+  min-width: 32rem;
+  max-width: 32rem;
+  min-height: 3rem;
+  max-height: 15rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  color: var(--colorPink);
+  outline: none;
+  caret-color: var(--colorPink);
+}
+
+p {
+  color: var(--colorBlack);
+}
+
+li {
+  list-style-image: url(../img/heart_16.png);
+  line-height: 1.5rem;
+  font-size: 0.9em;
+}
+
+img {
+  object-fit: contain;
+}
+
+.contentPage {
+  padding-block: 1.2rem;
+  margin-inline: 3rem;
+}
+
+@media screen and (width <= 1200px) {
+  * {
+    font-size: 0.95rem;
+    flex-wrap: wrap;
+  }
+
+  input {
+    width: 30rem;
+  }
+
+  textarea {
+    min-width: 30rem;
+    max-width: 30rem;
+  }
+}
+
+@media screen and (width <= 576px) {
+  * {
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+
+  input {
+    width: 28rem;
+  }
+
+  textarea {
+    min-width: 28rem;
+    max-width: 28rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--colorBlack);
+  }
+
+  .aTurquoise {
+    color: var(--colorWhite);
+  }
+
+  .aPink {
+    color: var(--colorWhite);
+  }
+
+  p {
+    color: var(--colorWhite);
+  }
+
+  li {
+    color: var(--colorWhite);
+    list-style-image: url(../img/heart_16white.png);
+  }
+
+  .starImg {
+    filter: invert(1);
+  }
+
+  .iconSkills {
+    filter: invert(1);
+  }
+}
