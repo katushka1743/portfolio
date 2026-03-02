@@ -96,13 +96,9 @@ try {
 watch(usersLocalStorage, (newValue) => {
   localStorage.setItem('user', JSON.stringify(newValue));
 }, { deep: true });
-
-
-// localStorage.clear()
 </script>
 
 <template>
-
   <div class="section contacts">
     <h2 class="Pink">Связаться со мной</h2>
     <div class="inputs">
@@ -134,7 +130,6 @@ watch(usersLocalStorage, (newValue) => {
     <div v-if="local.okForm" class="Turquoise">Форма заполнена, но пока она никуда ничего не отправляет</div>
     <p class="info Pink">Отправляя свои данные через форму, вы соглашаетесь с&nbsp;их обработкой исключительно для&nbsp;связи со&nbsp;мной. Я&nbsp;не&nbsp;передаю информацию третьим лицам и&nbsp;не&nbsp;использую её&nbsp;в&nbsp;рекламных целях.</p>
     <button class="buttonPink" @click="checkForm()">Отправить форму</button>
-
 
   </div>
 </template>

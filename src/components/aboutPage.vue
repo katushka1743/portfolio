@@ -1,9 +1,3 @@
-<script setup>
-
-</script>
-
-
-
 <template>
   <div class="contentPage">
     <h2 class="Pink">Обо мне</h2>
@@ -83,10 +77,8 @@
           и&nbsp;увереннее в&nbsp;своём деле.
         </p>
       </div>
-
-
-
     </div>
+
     <div class="buttonsStart">
       <RouterLink :to="{ name: 'casePage' }"><button class="buttonTurquoise">Посмотреть работы</button></RouterLink>
       <RouterLink :to="{ name: 'contactsPage' }"><button class="buttonPink">Связаться</button></RouterLink>
@@ -98,8 +90,6 @@
 p {
   line-height: 1.4rem;
 }
-
-
 
 .elements {
   display: grid;
@@ -138,7 +128,6 @@ p {
   background: var(--colorGradientTP);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-
 }
 
 .title {
@@ -182,6 +171,5 @@ p {
   .buttonsStart {
     gap: 1rem;
   }
-
 }
 </style>

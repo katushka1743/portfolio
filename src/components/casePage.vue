@@ -2,8 +2,6 @@
 import formVue from './form.vue';
 </script>
 
-
-
 <template>
   <div class="contentPage">
     <h2 class="Pink">Мои работы</h2>
@@ -76,15 +74,10 @@ import formVue from './form.vue';
       </figure>
     </div>
 
-
-
     <formVue></formVue>
-
 
   </div>
 </template>
-
-
 
 <style scoped>
 .titleImg {

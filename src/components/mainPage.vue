@@ -2,8 +2,6 @@
 import formVue from './form.vue';
 </script>
 
-
-
 <template>
   <div class="contentPage">
     <div class="section hero">
@@ -30,7 +28,6 @@ import formVue from './form.vue';
           пользу пользователю.</span>
       </p>
       <RouterLink :to="{ name: 'aboutPage' }"><button class="buttonTurquoise">Обо мне</button></RouterLink>
-
     </div>
 
     <div class="section skills">
@@ -67,18 +64,12 @@ import formVue from './form.vue';
         </figure>
       </div>
       <RouterLink :to="{ name: 'casePage' }"><button class="buttonTurquoise">Все проекты</button></RouterLink>
-
-
-
     </div>
 
     <formVue></formVue>
 
-
   </div>
 </template>
-
-
 
 <style scoped>
 .section {
@@ -153,7 +144,6 @@ span {
 .textAbout .accent {
   font-size: 1.5rem;
 }
-
 
 .skillsImges {
   display: flex;

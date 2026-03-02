@@ -2,8 +2,6 @@
 import formVue from './form.vue';
 </script>
 
-
-
 <template>
   <div class="contentPage">
     <h2 class="Pink">Мои контакты</h2>
@@ -39,14 +37,11 @@ import formVue from './form.vue';
   </div>
 </template>
 
-
-
 <style scoped>
 .contactsInfo {
   display: flex;
   flex-direction: row;
   gap: 3rem;
-  /* justify-content: space-around; */
   justify-content: center;
 }
 
@@ -72,5 +67,4 @@ import formVue from './form.vue';
 .iconSkills {
   width: 5.5rem;
 }
-
 </style>

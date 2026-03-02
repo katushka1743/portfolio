@@ -8,13 +8,9 @@ const burgerActive = ref(false)
 function upBtn() {
   window.scrollTo({ top: 0, behavior: 'smooth' })
 }
-
-
-
 </script>
 
 <template>
-
   <div class="content">
     <header class="header">
       <div>
@@ -23,9 +19,11 @@ function upBtn() {
           <img src="../img/heart_259424_25px.webp" alt="" srcset="">
         </RouterLink>
       </div>
+
       <div class="burger">
         <button class="hamburger" @click="burgerActive = !burgerActive">☰</button>
       </div>
+
       <nav :class="{ 'active': burgerActive }">
         <RouterLink class="navRouter" :class="{'activePage': route.path === '/portfolio/'}" :to="{ name: 'mainPage' }" @click="burgerActive = !burgerActive">Главная</RouterLink>
         <RouterLink class="navRouter" :class="{'activePage': route.path === '/portfolio/aboutPage'}" :to="{ name: 'aboutPage' }" @click="burgerActive = !burgerActive">Обо мне</RouterLink>
@@ -34,15 +32,17 @@ function upBtn() {
         <RouterLink class="navRouter" :class="{'activePage': route.path === '/portfolio/contactsPage'}" :to="{ name: 'contactsPage' }" @click="burgerActive = !burgerActive">Контакты</RouterLink>
       </nav>
     </header>
+
     <main class="main">
       <router-view></router-view>
       <button class="upBtn" @click="upBtn">
         <img src="../img/Group 12.png" alt="up">
       </button>
     </main>
+
     <footer class="footer ">
       <div class="copyright footerElem" translate="no">
-        © 2025 katushka1743
+        © 2026 katushka1743
       </div>
       <div class="social footerElem ">
         <a target="_blank" translate="no" href="https://vk.com/katushka1743group">Vkontakte &#8599;</a>
@@ -104,7 +104,6 @@ nav {
   gap: 5rem;
 }
 
-
 .navRouter {
   color: var(--colorBlack);
 }
@@ -113,7 +112,6 @@ nav {
   font-family: "Raleway";
   font-weight: 900;
 }
-
 
 .upBtn {
   background-color: transparent;
@@ -165,8 +163,6 @@ nav {
   }
 }
 
-
-
 @media screen and (width <=582px) {
   .header {
     flex-direction: row;
@@ -180,8 +176,6 @@ nav {
   .header img {
     width: 1.1rem;
   }
-
-
 
   .hamburger {
     display: block;
@@ -207,36 +201,10 @@ nav {
     gap: 1.5rem;
   }
 
-
-
-
-
-  nav.active {
-  top: 4.8rem;
+  nav:active{
+    top: 4.8rem;
     transition: top, 2s, ease-in-out;
-
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   .footer {
     flex-direction: column-reverse;
